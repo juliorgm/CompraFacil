@@ -6,11 +6,11 @@ import java.util.List;
 public class Lista implements Serializable{
     private String nomeLista;
     private String dataCriacao;
-    private List<Item> listaDeItens;
+    private List<ItemLista> listaDeItens;
 
     public Lista(){}
 
-    public Lista(String nomeLista, String dataCriacao, List<Item> listaDeItens) {
+    public Lista(String nomeLista, String dataCriacao, List<ItemLista> listaDeItens) {
         this.nomeLista = nomeLista;
         this.dataCriacao = dataCriacao;
         this.listaDeItens = listaDeItens;
@@ -32,11 +32,11 @@ public class Lista implements Serializable{
         this.dataCriacao = dataCriacao;
     }
 
-    public List<Item> getListaDeItens() {
+    public List<ItemLista> getListaDeItens() {
         return listaDeItens;
     }
 
-    public void setListaDeItens(List<Item> listaDeItens) {
+    public void setListaDeItens(List<ItemLista> listaDeItens) {
         this.listaDeItens = listaDeItens;
     }
 
