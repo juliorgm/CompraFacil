@@ -1,19 +1,24 @@
 package br.com.juliorgm.comprafacil.model;
 
+import com.google.firebase.database.Exclude;
+
 import java.io.Serializable;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Lista implements Serializable{
     private String nomeLista;
     private String dataCriacao;
     private List<ItemLista> listaDeItens;
+    public Map<String, Boolean> stars = new HashMap<>();
 
     public Lista(){}
 
-    public Lista(String nomeLista, String dataCriacao, List<ItemLista> listaDeItens) {
+    public Lista(String nomeLista, String dataCriacao) {
         this.nomeLista = nomeLista;
         this.dataCriacao = dataCriacao;
-        this.listaDeItens = listaDeItens;
+        this.listaDeItens = null;
     }
 
     public String getNomeLista() {

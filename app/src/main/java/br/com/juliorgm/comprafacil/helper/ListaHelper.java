@@ -21,14 +21,21 @@ public class ListaHelper {
     public Lista novaLista(){
         lista = new Lista();
         lista.setNomeLista(campoNovaLista.getText().toString());
-        Calendar hoje = Calendar.getInstance();
-        hoje.add(Calendar.DATE, 1);
-        SimpleDateFormat format1 = new SimpleDateFormat("dd / MM / yyyy");
-        String formatted = format1.format(hoje.getTime());
-        lista.setDataCriacao(formatted);
+        formataData();
 
         return lista;
     }
 
+    void formataData(){
+        Calendar hoje = Calendar.getInstance();
+        hoje.add(Calendar.DATE, 1);
+        SimpleDateFormat format1 = new SimpleDateFormat("dd/MM/yyyy");
+        String formatted = format1.format(hoje.getTime());
+        lista.setDataCriacao(formatted);
+    }
 
+
+    public void limpaCampos() {
+        campoNovaLista.setText(null);
+    }
 }

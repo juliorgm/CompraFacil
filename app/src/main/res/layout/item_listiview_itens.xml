@@ -16,7 +16,7 @@
         app:srcCompat="@mipmap/ic_item_padrao_round" />
 
     <TextView
-        android:id="@+id/txtNomeItem"
+        android:id="@+id/txtNomeItemTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -38,7 +38,7 @@
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/icoItem"
-        app:layout_constraintTop_toBottomOf="@+id/txtNomeItem" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNomeItemTitulo" />
 
     <ImageButton
         android:id="@+id/btnExcluir"
